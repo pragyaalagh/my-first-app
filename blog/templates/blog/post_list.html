@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<!DOCTYPE html>
+<html>
+<head>
+	<h1>Pragya's Blog</h1>
+
+</head>
+<body>
+	<div>
+     {%for post in posts%}
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+        <p>published: {{ post.published_date }}</p>
+     {%endfor%}
+
+    </div>
+	
+</body>
+</html>
